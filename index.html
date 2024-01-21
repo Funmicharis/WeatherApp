@@ -7,6 +7,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
    <link href="style.css" rel="stylesheet">
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <title>Weather App</title>
 </head>
 <body>
@@ -39,12 +40,14 @@
                 <a href="#" id="celcius-link"></a>|<a href="#" id="fahrenheit-link">&degF</a></span>
     </div>
     </div>
-
+<div class="col-3">
+    <button class="btn btn-success w-100" id=" current-location-button">Current</button>
+</div>
 <div class="col-6">
     <ul class="move-left">
-        <li>Precipitation:12%</li>
-        <li>Humidity:97%</li>
-        <li>Wind:14km/hr</li>
+        <li>Precipitation:<span id="precipitation"></span>%</li>
+        <li>Humidity:<span id="humidity"></span>%</li>
+        <li>Wind:<span id="wind"></span>km/hr</li>
     </ul>
 
     
